@@ -6,7 +6,7 @@ Please feel free to have a look at my blog at [www.hascode.com] for the full tut
 
 ## Running the Tests
 
-Running the tests in the command-line is easy using [Maven]:
+Running the tests in the command-line is easy using [Maven]
 
 ```
 mvn test
