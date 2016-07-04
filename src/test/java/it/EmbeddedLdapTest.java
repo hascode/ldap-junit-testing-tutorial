@@ -25,7 +25,7 @@ public class EmbeddedLdapTest {
 			.importingLdifs("users-import.ldif").build();
 
 	@Test
-	public void shouldFindAllUser() throws Exception {
+	public void shouldFindAllPersons() throws Exception {
 		final LDAPInterface ldapConnection = embeddedLdapRule.ldapConnection();
 		final SearchResult searchResult = ldapConnection.search(DOMAIN_DSN, SearchScope.SUB, "(objectClass=person)");
 		assertThat(3, equalTo(searchResult.getEntryCount()));
@@ -36,7 +36,7 @@ public class EmbeddedLdapTest {
 	}
 
 	@Test
-	public void shouldFindExactUser() throws Exception {
+	public void shouldFindExactPerson() throws Exception {
 		final LDAPInterface ldapConnection = embeddedLdapRule.ldapConnection();
 		final SearchResult searchResult = ldapConnection.search("cn=Santa Claus,ou=Users,dc=example,dc=com",
 				SearchScope.SUB, "(objectClass=person)");
