@@ -1,3 +1,5 @@
+[![build-status](https://pipelines-badges-service.useast.staging.atlassian.io/badge/hascode/ldap-junit-testing-tutorial.svg)](https://bitbucket.org/hascode/ldap-junit-testing-tutorial/addon/pipelines/home)
+
 # LDAP JUnit Testing Tutorial
 
 A demonstration how to initialize an embedded LDAP server, import test data from a given LDIF file and run tests using either the [ApacheDS] Testing Library or the [embedded-ldap-junit] library with [JUnit].
